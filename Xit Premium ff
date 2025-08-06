@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xit FF Premium 🔥</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: url('https://i.gifer.com/Yk2W.gif') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 30px;
+      text-align: center;
+      border-bottom: 2px solid #ff0000;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #ff4444;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    header p {
+      font-size: 1em;
+      margin-top: 10px;
+      color: #f8dada;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      margin: 30px;
+      border-radius: 15px;
+    }
+
+    .card {
+      background: rgba(20, 20, 20, 0.95);
+      border: 1px solid rgba(255, 0, 0, 0.3);
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+      box-shadow: 0 4px 20px rgba(255, 0, 0, 0.15);
+      backdrop-filter: blur(2px);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      border: 1px solid rgba(255, 0, 0, 0.6);
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      color: #ff6666;
+      text-shadow: 0 0 5px #ff3333;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.2em;
+      margin: 10px 0;
+      color: #eee;
+    }
+
+    .buy-btn {
+      background: #ff0000;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      box-shadow: 0 0 8px #ff0000;
+    }
+
+    .buy-btn:hover {
+      background: #cc0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.85);
+      font-size: 0.9em;
+      color: #999;
+      border-top: 1px solid #ff0000;
+    }
+
+    /* MODAL DE AVISO */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 20px #ff0000;
+    }
+
+    .modal-content h2 {
+      color: #ff4444;
+      margin-bottom: 15px;
+    }
+
+    .modal-content p {
+      color: #ccc;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .close-btn {
+      background: #ff0000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .close-btn:hover {
+      background: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MODAL DE AVISO -->
+  <div class="modal" id="avisoModal">
+    <div class="modal-content">
+      <h2>🚨 Promoção Especial!</h2>
+      <p>Melhores preços por tempo limitado</p>
+      <button class="close-btn" onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Xit FF Premium 🔥</h1>
+    <p>Melhore sua jogabilidade no Free Fire com as melhores configurações</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="img/sensi1.jpg" alt="Xit Ultra Rápido">
+      <h2>Xit Ultra Rápido</h2>
+      <p>Ideal para celulares fracos</p>
+      <p class="price">R$ 5,00</p>
+      <a href="https://wa.me/SEU_NUMERO" class="buy-btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="img/sensi2.jpg" alt="Xit 90 FPS">
+      <h2>Xit 90 FPS</h2>
+      <p>Desempenho de elite</p>
+      <p class="price">R$ 19,99</p>
+      <a href="https://wa.me/SEU_NUMERO" class="buy-btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="img/sensi3.jpg" alt="Xit VIP">
+      <h2>Xit VIP</h2>
+      <p>Melhora a movimentação</p>
+      <p class="price">R$ 25,99</p>
+      <a href="https://wa.me/SEU_NUMERO" class="buy-btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="img/sensi4.jpg" alt="Xit Pro Avançado">
+      <h2>Xit Pro Avançado</h2>
+      <p>A sensibilidade mais equilibrada para ranqueadas</p>
+      <p class="price">R$ 17,89</p>
+      <a href="https://wa.me/SEU_NUMERO" class="buy-btn">Comprar</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 - Xit FF Premium. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function fecharModal() {
+      document.getElementById("avisoModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
